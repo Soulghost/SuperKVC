@@ -59,7 +59,7 @@ The config descriptions are below.
 |:---:|:---:|:---:|
 |bind|tell the injector what model should be created and injected.|injector.bind(#Class#);|
 |mapping|tell the injector to mapping the response key to another property name.|injector.mapping(#responseKey#).to(#propertyName#);|
-|format|format a property with a block filter.|injector.format(#propertyName#).with.converter(^id (id oldVar) { /* your format code */ return #newVar# });|
+|format|format a property with a block filter.|injector.format(#propertyName#).with.converter(^id (id oldVar) { /* your format code */ return #newVar#; });|
 |ignore|ignore some property which should not be injected. note that ignores can be joined by `and` in one line.|injector.ignore(#propName1#).and(#propName2#) ...|
 |synthesize|to tell the injector mapping a property to a specific ivar. such as when @synthesize userId = userId_, the injector cannot get ivar by default|injector.synthesize(#propertyName#).to(#ivarName#);|
 
