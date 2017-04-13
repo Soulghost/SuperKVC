@@ -80,7 +80,7 @@ Think about we have another json below.
     "birthday": "1996-08-12",
     "isVip": false,
     "partners": [100710, 100715]
-}, /*...*/]
+},{},]
 ```
 
 We needn't to modify any codes to get a `UserModel` array.
@@ -124,7 +124,7 @@ Think about we have a two level json.
             "expire": "2024-08-15"
         }
     ]
-},/*...*/]
+},{},]
 ```
 
 And our class structures are below.
