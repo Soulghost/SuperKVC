@@ -59,7 +59,7 @@ The config descriptions are below.
 |:---:|:---:|:---:|
 |bind|tell the injector what model should be created and injected.|injector.bind(#Class#);|
 |mapping|tell the injector to mapping the response key to another property name.|injector.mapping(#responseKey#).to(#propertyName#);|
-|format|format a property with a block filter.|injector.format(#propertyName#).with.converter(^id (id oldVar) { /* your format code */ return #newVar# });|
+|format|format a property with a block filter.|injector.format(#propertyName#).with.converter(^id (id oldVar) { /* your format code */ return #newVar#; });|
 |ignore|ignore some property which should not be injected. note that ignores can be joined by `and` in one line.|injector.ignore(#propName1#).and(#propName2#) ...|
 |synthesize|to tell the injector mapping a property to a specific ivar. such as when @synthesize userId = userId_, the injector cannot get ivar by default|injector.synthesize(#propertyName#).to(#ivarName#);|
 
@@ -80,7 +80,7 @@ Think about we have another json below.
     "birthday": "1996-08-12",
     "isVip": false,
     "partners": [100710, 100715]
-}, ...]
+},{},]
 ```
 
 We needn't to modify any codes to get a `UserModel` array.
@@ -124,7 +124,7 @@ Think about we have a two level json.
             "expire": "2024-08-15"
         }
     ]
-},...]
+},{},]
 ```
 
 And our class structures are below.
