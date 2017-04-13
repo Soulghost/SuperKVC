@@ -1,0 +1,196 @@
+[{
+    "id": 100075,
+    "name": "Greedy",
+    "birthday": "1993-03-06",
+    "isVip": true,
+    "partners": [100236, 100244, 100083]
+},
+{
+    "id": 100724,
+    "name": "Charlie",
+    "birthday": "1996-08-12",
+    "isVip": false,
+    "partners": [100710, 100715]
+},
+{
+    "id": 100002,
+    "name": "John",
+    "birthday": "1987-08-06",
+    "isVip": true,
+    "partners": [100003, 100005, 100009]
+},
+{
+    "id": 100802,
+    "name": "Jenny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 100902,
+    "name": "Denny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 101802,
+    "name": "Cherry",
+    "birthday": "1994-10-14",
+    "isVip": false,
+    "partners": [100145, 100148]
+},
+{
+    "id": 101832,
+    "name": "Flask",
+    "birthday": "1994-09-02",
+    "isVip": false,
+    "partners": [100123]
+},
+{
+    "id": 100075,
+    "name": "Greedy",
+    "birthday": "1993-03-06",
+    "isVip": true,
+    "partners": [100236, 100244, 100083]
+},
+{
+    "id": 100724,
+    "name": "Charlie",
+    "birthday": "1996-08-12",
+    "isVip": false,
+    "partners": [100710, 100715]
+},
+{
+    "id": 100002,
+    "name": "John",
+    "birthday": "1987-08-06",
+    "isVip": true,
+    "partners": [100003, 100005, 100009]
+},
+{
+    "id": 100802,
+    "name": "Jenny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 100902,
+    "name": "Denny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 101802,
+    "name": "Cherry",
+    "birthday": "1994-10-14",
+    "isVip": false,
+    "partners": [100145, 100148]
+},
+{
+    "id": 101832,
+    "name": "Flask",
+    "birthday": "1994-09-02",
+    "isVip": false,
+    "partners": [100123]
+},
+{
+    "id": 100075,
+    "name": "Greedy",
+    "birthday": "1993-03-06",
+    "isVip": true,
+    "partners": [100236, 100244, 100083]
+},
+{
+    "id": 100724,
+    "name": "Charlie",
+    "birthday": "1996-08-12",
+    "isVip": false,
+    "partners": [100710, 100715]
+},
+{
+    "id": 100002,
+    "name": "John",
+    "birthday": "1987-08-06",
+    "isVip": true,
+    "partners": [100003, 100005, 100009]
+},
+{
+    "id": 100802,
+    "name": "Jenny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 100902,
+    "name": "Denny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 101802,
+    "name": "Cherry",
+    "birthday": "1994-10-14",
+    "isVip": false,
+    "partners": [100145, 100148]
+},
+{
+    "id": 101832,
+    "name": "Flask",
+    "birthday": "1994-09-02",
+    "isVip": false,
+    "partners": [100123]
+},
+{
+    "id": 100075,
+    "name": "Greedy",
+    "birthday": "1993-03-06",
+    "isVip": true,
+    "partners": [100236, 100244, 100083]
+},
+{
+    "id": 100724,
+    "name": "Charlie",
+    "birthday": "1996-08-12",
+    "isVip": false,
+    "partners": [100710, 100715]
+},
+{
+    "id": 100002,
+    "name": "John",
+    "birthday": "1987-08-06",
+    "isVip": true,
+    "partners": [100003, 100005, 100009]
+},
+{
+    "id": 100802,
+    "name": "Jenny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 100902,
+    "name": "Denny",
+    "birthday": "1993-08-04",
+    "isVip": false,
+    "partners": [100072]
+},
+{
+    "id": 101802,
+    "name": "Cherry",
+    "birthday": "1994-10-14",
+    "isVip": false,
+    "partners": [100145, 100148]
+},
+{
+    "id": 101832,
+    "name": "Flask",
+    "birthday": "1994-09-02",
+    "isVip": false,
+    "partners": [100123]
+}]

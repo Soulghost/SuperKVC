@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="105" id="Zx9-VP-Omt" customClass="UserCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zx9-VP-Omt" id="9V7-Ob-Rja">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="idLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l27-Bd-vpi">
+                        <rect key="frame" x="8" y="8" width="47" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.7999380827" green="0.80003482100000001" blue="0.79990512130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Il2-1S-P6d">
+                        <rect key="frame" x="8" y="37" width="79.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vu-gW-k52">
+                        <rect key="frame" x="258" y="8" width="54" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.7999380827" green="0.80003482100000001" blue="0.79990512130000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cardLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSG-S8-K71" userLabel="cardLabel">
+                        <rect key="frame" x="8" y="68.5" width="304" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vSG-S8-K71" firstAttribute="leading" secondItem="9V7-Ob-Rja" secondAttribute="leading" constant="8" id="443-xL-hVN"/>
+                    <constraint firstItem="Il2-1S-P6d" firstAttribute="top" secondItem="l27-Bd-vpi" secondAttribute="bottom" constant="12" id="5A0-iG-jXx"/>
+                    <constraint firstItem="2vu-gW-k52" firstAttribute="top" secondItem="9V7-Ob-Rja" secondAttribute="top" constant="8" id="AO0-ts-9Rv"/>
+                    <constraint firstItem="Il2-1S-P6d" firstAttribute="leading" secondItem="9V7-Ob-Rja" secondAttribute="leading" constant="8" id="Lje-W3-H71"/>
+                    <constraint firstAttribute="trailing" secondItem="vSG-S8-K71" secondAttribute="trailing" constant="8" id="O8N-Rw-x2N"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vSG-S8-K71" secondAttribute="bottom" constant="12" id="RQq-Hm-793"/>
+                    <constraint firstAttribute="trailing" secondItem="2vu-gW-k52" secondAttribute="trailing" constant="8" id="Ups-Vg-DcH"/>
+                    <constraint firstItem="vSG-S8-K71" firstAttribute="top" secondItem="Il2-1S-P6d" secondAttribute="bottom" constant="12" id="XfM-Pg-igo"/>
+                    <constraint firstItem="l27-Bd-vpi" firstAttribute="top" secondItem="9V7-Ob-Rja" secondAttribute="top" constant="8" id="hlD-Ct-66e"/>
+                    <constraint firstItem="l27-Bd-vpi" firstAttribute="leading" secondItem="9V7-Ob-Rja" secondAttribute="leading" constant="8" id="lJZ-bF-H8m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="birthdayLabel" destination="2vu-gW-k52" id="FcK-fn-BiC"/>
+                <outlet property="cardLabel" destination="vSG-S8-K71" id="drd-MV-B9c"/>
+                <outlet property="idLabel" destination="l27-Bd-vpi" id="Cb2-tG-7ie"/>
+                <outlet property="nameLabel" destination="Il2-1S-P6d" id="e2g-lE-Fa9"/>
+            </connections>
+            <point key="canvasLocation" x="-54" y="16"/>
+        </tableViewCell>
+    </objects>
+</document>
