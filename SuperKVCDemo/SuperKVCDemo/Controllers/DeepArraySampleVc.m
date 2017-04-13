@@ -11,7 +11,6 @@
 #import "UserModel.h"
 #import "CardModel.h"
 #import "SuperKVC.h"
-#import <mach/mach_time.h>
 
 static NSString *cellId = @"UserCardCell";
 
@@ -44,8 +43,6 @@ static NSString *cellId = @"UserCardCell";
         injector.bind([UserModel class]);
         injector.mapping(@"id").to(@"userId");
         injector.format(@"birthday").with.converter(^NSDate* (NSString *birthdayString) {
-            NSDateFormatter *fmt = [NSDateFormatter new];
-            fmt.dateFormat = @"yyyy-MM-dd";
             return [fmt dateFromString:birthdayString];
         });
         injector.format(@"cards").with.converter(^CardModel* (NSDictionary *cardDictArray) {
