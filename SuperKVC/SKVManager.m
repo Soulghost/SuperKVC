@@ -11,9 +11,10 @@
 
 @implementation SKVProperty
 
-- (instancetype)initWithPropName:(NSString *)propName {
+- (instancetype)initWithPropName:(NSString *)propName isPrimary:(BOOL)isPrimary {
     if (self = [super init]) {
         _propName = propName;
+        _isPrimary = isPrimary;
     }
     return self;
 }

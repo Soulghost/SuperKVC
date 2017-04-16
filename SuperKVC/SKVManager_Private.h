@@ -13,8 +13,9 @@
 @interface SKVProperty : NSObject
 
 @property (nonatomic, copy) NSString *propName;
+@property (nonatomic, assign) BOOL isPrimary;
 
-- (instancetype)initWithPropName:(NSString *)propName;
+- (instancetype)initWithPropName:(NSString *)propName isPrimary:(BOOL)isPrimary;
 
 @end
 

@@ -12,6 +12,8 @@
 #import "SKVManager_Private.h"
 #import <objc/runtime.h>
 
+bool isPrimary(objc_property_t property);
+
 @implementation NSObject (SuperKVC)
 
 - (id)sk_injectWithInjector:(void (^)(SuperKVCInjector *))block {
@@ -89,7 +91,7 @@
 }
 
 - (id)buildAndInjectModelWithClass:(Class)clazz dict:(NSDictionary *)dict forInjector:(SuperKVCInjector *)injector {
-    BOOL (^handlePropNamed)(id model, NSString *propName) = ^BOOL (id model, NSString *propName) {
+    BOOL (^handlePropNamed)(id model, NSString *propName, BOOL isPrimary) = ^BOOL (id model, NSString *propName, BOOL isPrimary) {
         NSString *responseName = propName;
         if (injector.mappingDict[propName] != nil) {
             responseName = injector.mappingDict[propName];
@@ -106,6 +108,11 @@
         id value = dict[responseName];
         // check if NSNull
         if ([value isKindOfClass:[NSNull class]]) {
+            return YES;
+        }
+        // primary auto format
+        if (isPrimary) {
+            [model setValue:@([value doubleValue]) forKey:propName];
             return YES;
         }
         // idle format
@@ -128,7 +135,7 @@
     if (cachedProps) {
         [cachedProps enumerateObjectsUsingBlock:^(SKVProperty * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSString *propName = obj.propName;
-            handlePropNamed(model, propName);
+            handlePropNamed(model, propName, obj.isPrimary);
         }];
         return model;
     }
@@ -143,13 +150,32 @@
         if ([injector.ignoreSet containsObject:propName]) {
             continue;
         }
-        if (handlePropNamed(model, propName)) {
-            [propsToCache addObject:[[SKVProperty alloc] initWithPropName:propName]];
+        // check if primary property, to handle NSString to NSValue
+        BOOL isP = isPrimary(prop);
+        if (handlePropNamed(model, propName, isP)) {
+            [propsToCache addObject:[[SKVProperty alloc] initWithPropName:propName isPrimary:isP]];
         }
     }
     [mgr cachePropsForClass:[model class] props:propsToCache];
     free(props);
     return model;
+}
+
+bool isPrimary(objc_property_t property) {
+    char type = *(property_copyAttributeValue(property, "T"));
+    switch (tolower(type)) {
+        case 'c':
+        case 'd':
+        case 'i':
+        case 'f':
+        case 'l':
+        case 's':
+        case 'b':
+        case 'q':
+            return YES;
+        default:
+            return NO;
+    }
 }
 
 @end
