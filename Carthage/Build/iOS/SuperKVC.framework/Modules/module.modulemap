@@ -1,0 +1,6 @@
+framework module SuperKVC {
+  umbrella header "SuperKVC.h"
+
+  export *
+  module * { export * }
+}

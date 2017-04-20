@@ -24,9 +24,11 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "."
+  s.description  = <<-DESC
+    SuperKVC is a light-weight model framework to convert JSON to Model. It has its own config DSL which provides a chainable way of describing your injection config concise and readable. SuperKVC supports iOS and macOS.
+                   DESC
 
-  s.homepage     = "https://github.com/Soulghost/SuperKVC.git"
+  s.homepage     = "https://github.com/Soulghost/SuperKVC"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -51,7 +53,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Yutong Xiu" => "xiuyutong1994@163.com" }
+  s.author             = { "xiuyutong" => "xiuyutong1994@163.com" }
   # Or just: s.author    = "xiuyutong"
   # s.authors            = { "xiuyutong" => "xiuyutong1994@163.com" }
   # s.social_media_url   = "http://twitter.com/xiuyutong"
@@ -78,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Soulghost/SuperKVC", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Soulghost/SuperKVC.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SuperKVC/*"
+  s.source_files  = "SuperKVC/*.{h,m}"
+  # s.source_files  = "Classes", "Classes/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -115,8 +118,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  s.frameworks = "Foundation"
+  s.framework  = "Foundation"
+  # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

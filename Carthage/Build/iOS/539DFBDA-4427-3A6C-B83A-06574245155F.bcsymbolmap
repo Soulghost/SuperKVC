@@ -1,0 +1,181 @@
+BCSymbolMap Version: 2.0
+-[NSObject(SuperKVC) sk_injectWithInjector:]
+-[NSObject(SuperKVC) sk_dequeInjectorForClass:emptyHandler:]
+-[NSObject(SuperKVC) parseAttributesForInjector:]
+-[NSObject(SuperKVC) parseMappingAttribute:forInjector:]
+-[NSObject(SuperKVC) parseSynthesizeAttribute:forInjector:]
+-[NSObject(SuperKVC) parseIgnoreAttribute:forInjector:]
+-[NSObject(SuperKVC) parseFormatAttribute:forInjector:]
+-[NSObject(SuperKVC) buildAndInjectWithClass:forInjector:]
+-[NSObject(SuperKVC) buildAndInjectModelWithClass:dict:forInjector:]
+___68-[NSObject(SuperKVC) buildAndInjectModelWithClass:dict:forInjector:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+___68-[NSObject(SuperKVC) buildAndInjectModelWithClass:dict:forInjector:]_block_invoke.101
+___copy_helper_block_.104
+___destroy_helper_block_.105
+___block_descriptor_tmp
+___block_descriptor_tmp.107
+Apple LLVM version 8.1.0 (clang-802.0.38)
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/NSObject+SuperKVC.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVCDemo
+isPrimary
+tolower
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/ctype.h
+__destroy_helper_block_
+__copy_helper_block_
+__68-[NSObject(SuperKVC) buildAndInjectModelWithClass:dict:forInjector:]_block_invoke.101
+__68-[NSObject(SuperKVC) buildAndInjectModelWithClass:dict:forInjector:]_block_invoke
+-[SKVAttribute with]
+-[SKVAttribute priority]
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVAttribute.m
+-[SKVBindAttribute initWithBindClass:]
+-[SKVBindAttribute priority]
+-[SKVBindAttribute bindClass]
+-[SKVBindAttribute setBindClass:]
+_OBJC_IVAR_$_SKVBindAttribute._bindClass
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVBindAttribute.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVBindAttribute.h
+-[SKVFormatAttribute with]
+-[SKVFormatAttribute converter]
+___31-[SKVFormatAttribute converter]_block_invoke
+-[SKVFormatAttribute priority]
+-[SKVFormatAttribute modelKey]
+-[SKVFormatAttribute setModelKey:]
+-[SKVFormatAttribute converterBlock]
+-[SKVFormatAttribute .cxx_destruct]
+_OBJC_IVAR_$_SKVFormatAttribute._converterBlock
+_OBJC_IVAR_$_SKVFormatAttribute._modelKey
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVFormatAttribute.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVFormatAttribute.h
+__31-[SKVFormatAttribute converter]_block_invoke
+-[SKVIgnoreAttribute and]
+___25-[SKVIgnoreAttribute and]_block_invoke
+-[SKVIgnoreAttribute ignoreList]
+-[SKVIgnoreAttribute priority]
+-[SKVIgnoreAttribute setIgnoreList:]
+-[SKVIgnoreAttribute .cxx_destruct]
+_OBJC_IVAR_$_SKVIgnoreAttribute._ignoreList
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVIgnoreAttribute.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVIgnoreAttribute.h
+__25-[SKVIgnoreAttribute and]_block_invoke
+-[SKVMappingAttribute to]
+___25-[SKVMappingAttribute to]_block_invoke
+-[SKVMappingAttribute priority]
+-[SKVMappingAttribute responseKey]
+-[SKVMappingAttribute setResponseKey:]
+-[SKVMappingAttribute modelKey]
+-[SKVMappingAttribute setModelKey:]
+-[SKVMappingAttribute .cxx_destruct]
+_OBJC_IVAR_$_SKVMappingAttribute._responseKey
+_OBJC_IVAR_$_SKVMappingAttribute._modelKey
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVMappingAttribute.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVMappingAttribute.h
+__25-[SKVMappingAttribute to]_block_invoke
+-[SKVSynthesizeAttribute priority]
+-[SKVSynthesizeAttribute to]
+___28-[SKVSynthesizeAttribute to]_block_invoke
+-[SKVSynthesizeAttribute propName]
+-[SKVSynthesizeAttribute setPropName:]
+-[SKVSynthesizeAttribute ivarName]
+-[SKVSynthesizeAttribute setIvarName:]
+-[SKVSynthesizeAttribute .cxx_destruct]
+_OBJC_IVAR_$_SKVSynthesizeAttribute._propName
+_OBJC_IVAR_$_SKVSynthesizeAttribute._ivarName
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVSynthesizeAttribute.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVSynthesizeAttribute.h
+__28-[SKVSynthesizeAttribute to]_block_invoke
+-[SuperKVCInjector bind]
+___24-[SuperKVCInjector bind]_block_invoke
+-[SuperKVCInjector mapping]
+___27-[SuperKVCInjector mapping]_block_invoke
+___copy_helper_block_.12
+___destroy_helper_block_.13
+-[SuperKVCInjector synthesize]
+___30-[SuperKVCInjector synthesize]_block_invoke
+___copy_helper_block_.19
+___destroy_helper_block_.20
+-[SuperKVCInjector format]
+___26-[SuperKVCInjector format]_block_invoke
+___copy_helper_block_.26
+___destroy_helper_block_.27
+-[SuperKVCInjector ignore]
+___26-[SuperKVCInjector ignore]_block_invoke
+___copy_helper_block_.33
+___destroy_helper_block_.34
+-[SuperKVCInjector sortedAttributes]
+___36-[SuperKVCInjector sortedAttributes]_block_invoke
+-[SuperKVCInjector attributes]
+-[SuperKVCInjector mappingDict]
+-[SuperKVCInjector synthesizeDict]
+-[SuperKVCInjector ignoreSet]
+-[SuperKVCInjector formatDict]
+-[SuperKVCInjector isSorted]
+-[SuperKVCInjector setIsSorted:]
+-[SuperKVCInjector bindClass]
+-[SuperKVCInjector setBindClass:]
+-[SuperKVCInjector setMappingDict:]
+-[SuperKVCInjector setSynthesizeDict:]
+-[SuperKVCInjector setIgnoreSet:]
+-[SuperKVCInjector setFormatDict:]
+-[SuperKVCInjector setAttributes:]
+-[SuperKVCInjector hasSynthesize]
+-[SuperKVCInjector setHasSynthesize:]
+-[SuperKVCInjector .cxx_destruct]
+___block_descriptor_tmp.15
+___block_descriptor_tmp.22
+___block_descriptor_tmp.29
+___block_descriptor_tmp.36
+___block_descriptor_tmp.42
+___block_literal_global
+_OBJC_IVAR_$_SuperKVCInjector._attributes
+_OBJC_IVAR_$_SuperKVCInjector._mappingDict
+_OBJC_IVAR_$_SuperKVCInjector._synthesizeDict
+_OBJC_IVAR_$_SuperKVCInjector._ignoreSet
+_OBJC_IVAR_$_SuperKVCInjector._formatDict
+_OBJC_IVAR_$_SuperKVCInjector._isSorted
+_OBJC_IVAR_$_SuperKVCInjector._bindClass
+_OBJC_IVAR_$_SuperKVCInjector._hasSynthesize
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SuperKVCInjector.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SuperKVCInjector_Private.h
+__36-[SuperKVCInjector sortedAttributes]_block_invoke
+__26-[SuperKVCInjector ignore]_block_invoke
+__26-[SuperKVCInjector format]_block_invoke
+__30-[SuperKVCInjector synthesize]_block_invoke
+__27-[SuperKVCInjector mapping]_block_invoke
+__24-[SuperKVCInjector bind]_block_invoke
+-[SKVProperty initWithPropName:isPrimary:]
+-[SKVProperty propName]
+-[SKVProperty setPropName:]
+-[SKVProperty isPrimary]
+-[SKVProperty setIsPrimary:]
+-[SKVProperty .cxx_destruct]
++[SKVManager sharedManager]
+___27+[SKVManager sharedManager]_block_invoke
+-[SKVManager init]
+-[SKVManager clearCache]
+-[SKVManager propsCache]
+-[SKVManager injectorCache]
+-[SKVManager cachePropsForClass:props:]
+-[SKVManager propsFromCacheForClass:]
+-[SKVManager cacheInjectorForClass:injector:]
+-[SKVManager injectorFromCacheForClass:]
+-[SKVManager cacheLimit]
+-[SKVManager setCacheLimit:]
+-[SKVManager setPropsCache:]
+-[SKVManager setInjectorCache:]
+-[SKVManager .cxx_destruct]
+_OBJC_IVAR_$_SKVProperty._propName
+_OBJC_IVAR_$_SKVProperty._isPrimary
+_sharedManager.instance
+_sharedManager.onceToken
+_OBJC_IVAR_$_SKVManager._cacheLimit
+_OBJC_IVAR_$_SKVManager._propsCache
+_OBJC_IVAR_$_SKVManager._injectorCache
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVManager.m
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVManager_Private.h
+/Users/soulghost/Desktop/git/SuperKVC/SuperKVC/SKVManager.h
+__27+[SKVManager sharedManager]_block_invoke
+_dispatch_once
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/usr/include/dispatch/once.h
+/Users/soulghost/Library/Developer/Xcode/DerivedData/SuperKVCDemo-hcfpazebddgiotcraideawvvqoha/Build/Intermediates/SuperKVCDemo.build/Release-iphoneos/SuperKVC.build/DerivedSources/SuperKVC_vers.c

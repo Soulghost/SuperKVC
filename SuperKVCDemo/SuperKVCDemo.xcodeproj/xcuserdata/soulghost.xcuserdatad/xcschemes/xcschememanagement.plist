@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SuperKVC.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>SuperKVCDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>6874C1481E9E178600599F0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>689A6FCC1EA8A64300153C8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
