@@ -24,10 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "Cocoa Model Framework with a simplified, chainable and expressive syntax."
-  #                 DESC
+  s.description  = "."
 
-  s.homepage     = "https://github.com/Soulghost/SuperKVC"
+  s.homepage     = "https://github.com/Soulghost/SuperKVC.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

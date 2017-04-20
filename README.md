@@ -1,6 +1,6 @@
 # SuperKVC
 
-SuperKVC is a light-weight injection framework to convert JSON to Model. SuperKVC has its own config DSL which provides a chainable way of describing your injection config concise and readable. SuperKVC supports iOS and macOS.
+SuperKVC is a light-weight model framework to convert JSON to Model. SuperKVC has its own config DSL which provides a chainable way of describing your injection config concise and readable. SuperKVC supports iOS and macOS.
 
 Samples are at the **SuperKVCDemo** project in the SuperKVC workspace. There are three sample to show shallow and deep injection configurations.
 
